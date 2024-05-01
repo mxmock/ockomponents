@@ -1,0 +1,44 @@
+@use "./fonts/outfit";
+@use "./general/variables";
+
+// view
+@use "../components/view/input/input";
+@use "../components/view/button/button";
+@use "../components/view/radio/radio";
+
+html,
+body {
+  &.dark {
+    background: rgba(0, 0, 0, 0.96);
+  }
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 40px;
+  line-height: 1.618;
+  font-family: var(--font-outfit);
+  font-size: var(--font-size-medium);
+}
+
+.dark main {
+  background: black;
+}
+
+main {
+  padding: 32px;
+  margin: auto;
+  min-width: 74vw;
+  min-height: 400px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--brick-shadow);
+}

@@ -1,0 +1,83 @@
+@use "./flex" as fx;
+@use "./btn-reseter" as br;
+@use "./input-reseter" as ir;
+
+@keyframes smoothAnim {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@mixin smooth-appear {
+  -webkit-animation: var(--cubic-anim-slow) smoothAnim !important;
+  animation: var(--cubic-anim-slow) smoothAnim !important;
+}
+
+/****************************************** FLEX ******************************************/
+
+@mixin flex($direction: "row", $wrap: "wrap") {
+  @include fx.flex($direction, $wrap);
+}
+
+@mixin row() {
+  @include fx.row;
+}
+
+@mixin grow($size: 1) {
+  @include fx.grow($size);
+}
+
+@mixin center {
+  @include fx.center;
+}
+
+/****************************************** COLORS ******************************************/
+
+@function black-alpha($alpha: 100%) {
+  @return rgb(0 0 0 / #{$alpha});
+}
+
+@function white-alpha($alpha: 100%) {
+  @return rgb(255 255 255 / #{$alpha});
+}
+
+@function cyan-alpha($alpha: 100%) {
+  @return rgb(0 194 203 / #{$alpha});
+}
+
+@function pink-alpha($alpha: 100%) {
+  @return rgb(215 186 203 / #{$alpha});
+}
+
+@function size($s: 1) {
+  @return calc(#{$s}rem + 0.6vmin);
+}
+
+/****************************************** RESETERS ******************************************/
+
+@mixin input-reseter {
+  @include ir.input-reseter;
+}
+
+@mixin button-reseter {
+  @include br.button-reseter;
+}
+
+/****************************************** MISC ******************************************/
+
+@mixin truncate {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--lines, 1);
+}
+
+@mixin container() {
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+}

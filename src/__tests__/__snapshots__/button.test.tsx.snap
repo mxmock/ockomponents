@@ -1,0 +1,229 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`button component > should call onClick function when button is clicked and type prop is not "submit" and onClick prop is passed 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <button
+      type="button"
+    >
+      <span>
+        My button
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`button component > should have a type 'button' by default 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <button
+      type="button"
+    >
+      <span>
+        My button
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`button component > should have a type 'submit' when type prop is passed as 'submit' 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <button
+      type="submit"
+    >
+      <span>
+        My button
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`button component > should not call onClick function when button is clicked and type prop is "submit" 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <button
+      type="submit"
+    >
+      <span>
+        My button
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`button component > should not call onClick function when link is clicked 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <a
+      class=""
+      href="#example"
+    >
+      <span>
+        My button
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`button component > should render a button with an icon when 'Icon' prop is passed 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <button
+      type="button"
+    >
+      <span
+        class="button__icon"
+        data-testid="icon"
+      >
+        <svg
+          fill="none"
+          height="16px"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1="3"
+            x2="21"
+            y1="12"
+            y2="12"
+          />
+          <line
+            x1="3"
+            x2="21"
+            y1="6"
+            y2="6"
+          />
+          <line
+            x1="3"
+            x2="21"
+            y1="18"
+            y2="18"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`button component > should render a button with class 'button--outline' when 'outline' prop is passed as true 1`] = `
+<div>
+  <div
+    class="button button--outline"
+  >
+    <button
+      type="button"
+    >
+      <span>
+        My button
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`button component > should render a button with custom link when link prop is passed 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <a
+      class=""
+      href="https://example.com"
+    >
+      <span>
+        My button
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`button component > should render a button with custom text when text prop is passed 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <button
+      type="button"
+    >
+      <span>
+        My custom awesome button
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`button component > should render a button with default text when no text prop is passed 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <button
+      type="button"
+    >
+      <span>
+        My button
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`button component > should render a disabled button when disabled prop is passed as true 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <button
+      disabled=""
+      type="button"
+    >
+      <span>
+        My button
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`button component > should render a disabled link when disabled prop is passed as true 1`] = `
+<div>
+  <div
+    class="button "
+  >
+    <a
+      class="disabled"
+      href="#example"
+    >
+      <span>
+        My button
+      </span>
+    </a>
+  </div>
+</div>
+`;

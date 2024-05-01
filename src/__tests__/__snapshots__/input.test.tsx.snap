@@ -1,0 +1,312 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`input component > should call onChange function with the new value when input value changes 1`] = `
+<div>
+  <div
+    class="field   "
+  >
+    <input
+      autocomplete="on"
+      class="field__input"
+      id="input-id"
+      max="10000"
+      min="0"
+      name="input-id"
+      placeholder=""
+      step="1"
+      type="text"
+      value=""
+    />
+    <label
+      class="field__label "
+      for="input-id"
+    >
+      Input label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`input component > should render an actionable icon element with the RightIcon prop & iconAction prop 1`] = `
+<div>
+  <div
+    class="field   field--with-right-icon"
+  >
+    <input
+      autocomplete="on"
+      class="field__input"
+      id="input-id"
+      max="10000"
+      min="0"
+      name="input-id"
+      placeholder=""
+      step="1"
+      type="text"
+      value=""
+    />
+    <button
+      class="field__icon field__icon--right"
+      type="button"
+    >
+      <svg
+        fill="none"
+        height="calc(100% - 16px)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="calc(100% - 16px)"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="3"
+          x2="21"
+          y1="12"
+          y2="12"
+        />
+        <line
+          x1="3"
+          x2="21"
+          y1="6"
+          y2="6"
+        />
+        <line
+          x1="3"
+          x2="21"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </button>
+    <label
+      class="field__label "
+      for="input-id"
+    >
+      Input label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`input component > should render an icon element with the LeftIcon prop 1`] = `
+<div>
+  <div
+    class="field  field--with-left-icon "
+  >
+    <input
+      autocomplete="on"
+      class="field__input"
+      id="input-id"
+      max="10000"
+      min="0"
+      name="input-id"
+      placeholder=""
+      step="1"
+      type="text"
+      value=""
+    />
+    <span
+      class="field__icon field__icon--left"
+      data-testid="input-left-icon-input-id"
+    >
+      <svg
+        fill="none"
+        height="calc(100% - 16px)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="calc(100% - 16px)"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="3"
+          x2="21"
+          y1="12"
+          y2="12"
+        />
+        <line
+          x1="3"
+          x2="21"
+          y1="6"
+          y2="6"
+        />
+        <line
+          x1="3"
+          x2="21"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </span>
+    <label
+      class="field__label "
+      for="input-id"
+    >
+      Input label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`input component > should render an icon element with the RightIcon prop 1`] = `
+<div>
+  <div
+    class="field   field--with-right-icon"
+  >
+    <input
+      autocomplete="on"
+      class="field__input"
+      id="input-id"
+      max="10000"
+      min="0"
+      name="input-id"
+      placeholder=""
+      step="1"
+      type="text"
+      value=""
+    />
+    <span
+      class="field__icon field__icon--right"
+      data-testid="input-right-icon-input-id"
+    >
+      <svg
+        fill="none"
+        height="calc(100% - 16px)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="calc(100% - 16px)"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1="3"
+          x2="21"
+          y1="12"
+          y2="12"
+        />
+        <line
+          x1="3"
+          x2="21"
+          y1="6"
+          y2="6"
+        />
+        <line
+          x1="3"
+          x2="21"
+          y1="18"
+          y2="18"
+        />
+      </svg>
+    </span>
+    <label
+      class="field__label "
+      for="input-id"
+    >
+      Input label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`input component > should render an input element with custom props when props are passed 1`] = `
+<div>
+  <div
+    class="field field--hide-label  "
+  >
+    <input
+      autocomplete="on"
+      class="field__input"
+      disabled=""
+      id="my-input"
+      max="300"
+      min="45"
+      name="my-input"
+      placeholder="my placeholder"
+      required=""
+      step="43"
+      type="number"
+      value="value input"
+    />
+    <label
+      class="field__label field__label--required"
+      for="my-input"
+    >
+      my label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`input component > should render an input element with default props when no props are passed 1`] = `
+<div>
+  <div
+    class="field   "
+  >
+    <input
+      autocomplete="on"
+      class="field__input"
+      id="input-id"
+      max="10000"
+      min="0"
+      name="input-id"
+      placeholder=""
+      step="1"
+      type="text"
+      value=""
+    />
+    <label
+      class="field__label "
+      for="input-id"
+    >
+      Input label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`input component > should render an input element with suggestions (datalist) when suggestions props is passed 1`] = `
+<div>
+  <div
+    class="field   "
+  >
+    <input
+      autocomplete="off"
+      class="field__input"
+      id="input-id"
+      list="my-suggestions"
+      max="10000"
+      min="0"
+      name="input-id"
+      placeholder=""
+      step="1"
+      type="text"
+      value=""
+    />
+    <label
+      class="field__label "
+      for="input-id"
+    >
+      Input label
+    </label>
+    <datalist
+      data-testid="input-listbox-input-id"
+      id="my-suggestions"
+    >
+      <option
+        value="Value 1"
+      />
+      <option
+        value="Value 2"
+      />
+      <option
+        value="Value 3"
+      />
+    </datalist>
+  </div>
+</div>
+`;

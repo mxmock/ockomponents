@@ -1,0 +1,141 @@
+@function black-alpha($alpha: 100%) {
+  @return rgb(0 0 0 / #{$alpha});
+}
+@function white-alpha($alpha: 100%) {
+  @return rgb(255 255 255 / #{$alpha});
+}
+@function size($s: 1) {
+  @return calc(#{$s}px + 0.6vmin);
+}
+
+@mixin button-reseter {
+  & > span {
+    display: flex;
+    font-style: normal;
+    font-family: inherit;
+    text-decoration: none;
+    text-transform: initial;
+    color: var(--btn-color, inherit);
+    font-size: var(--btn-font-size, 100%);
+    line-height: var(--btn-height, inherit);
+    font-weight: var(--btn-weight, inherit);
+    padding: {
+      top: var(--btn-pad-vert, 8px);
+      left: var(--btn-pad-left, 16px);
+      bottom: var(--btn-pad-vert, 8px);
+      right: var(--btn-pad-right, 16px);
+    }
+  }
+  margin: 0;
+  flex: 1 0;
+  padding: 0;
+  z-index: 1;
+  border: none;
+  display: flex;
+  outline: none;
+  width: initial;
+  user-select: none;
+  position: relative;
+  font-kerning: none;
+  align-items: center;
+  font-family: inherit;
+  pointer-events: auto;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  color: var(--btn-color, inherit);
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--btn-font-size, 100%);
+  background: var(--btn-bg, transparent);
+  text-align: var(--btn-alignment, left);
+  line-height: var(--btn-height, inherit);
+  font-weight: var(--btn-weight, inherit);
+  justify-content: var(--btn-alignment, center);
+  border-top-left-radius: var(--btn-radius-tl, 0);
+  border-top-right-radius: var(--btn-radius-tr, 0);
+  border-bottom-left-radius: var(--btn-radius-bl, 0);
+  border-bottom-right-radius: var(--btn-radius-br, 0);
+}
+
+@mixin getEffects($outline: 0) {
+  @if ($outline == 0) {
+    a,
+    button {
+      &:hover {
+        --btn-shadow: 0 0 0 2px #{var(--btn-color)}, 0 0 0 4px #{var(--btn-border-color)};
+      }
+      &:focus,
+      &:focus-within {
+        --btn-shadow: 0 0 0 2px #{var(--btn-color)}, 0 0 0 5px #{var(--btn-border-color)};
+      }
+    }
+  }
+
+  @if ($outline == 1) {
+    a,
+    button {
+      &:hover {
+        --btn-shadow: 0 0 0 2px #{var(--btn-border-color)};
+      }
+      &:focus,
+      &:focus-within {
+        --btn-shadow: 0 0 0 3px #{var(--btn-border-color)};
+      }
+    }
+  }
+}
+
+.light .button {
+  --btn-bg: #{black-alpha(80%)};
+  --btn-color: #{white-alpha(96%)};
+  --btn-border-color: #{black-alpha(80%)};
+  &--outline {
+    --btn-bg: transparent !important;
+    --btn-color: #{black-alpha(88%)};
+  }
+}
+
+.dark .button {
+  --btn-bg: #{white-alpha(94%)};
+  --btn-color: #{black-alpha(88%)};
+  --btn-border-color: #{white-alpha(94%)};
+  &--outline {
+    --btn-bg: transparent !important;
+    --btn-color: #{white-alpha(96%)};
+  }
+}
+
+.button {
+  --btn-weight: 500;
+  --btn-height: 120%;
+  --btn-shadow-size: 1px;
+  --btn-shadow: 0 0 0 var(--btn-shadow-size) var(--btn-border-color);
+  @include getEffects;
+  &--outline {
+    @include getEffects(1);
+  }
+  a,
+  button {
+    --btn-radius-tl: 8px;
+    --btn-radius-tr: 8px;
+    --btn-radius-bl: 8px;
+    --btn-radius-br: 8px;
+    &:disabled,
+    &.disabled {
+      --btn-shadow: none;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    @include button-reseter;
+    cursor: pointer;
+    box-shadow: var(--btn-shadow);
+  }
+  &__icon:has(+ span) {
+    --btn-pad-right: 0;
+    --btn-pad-left: 8px;
+    transform: translateX(8px);
+  }
+  display: flex;
+}

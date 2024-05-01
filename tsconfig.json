@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    // "rootDir": "src",
+    // "module": "ESNext",
+    // "moduleResolution": "Bundler",
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "#*": ["./src/*"],
+      "#assets/*": ["./src/assets/*"],
+      "#components/*": ["./src/components/*"],
+      "#utils/*": ["./src/utils/*"]
+    },
+
+    "target": "es5",
+    // "emitDecoratorMetadata": true,
+    // "experimentalDecorators": true,
+    "lib": ["es2022", "es5", "dom"],
+
+    "strict": true,
+
+    "skipLibCheck": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+
+    "esModuleInterop": true,
+    // recommanded
+    "noEmit": true,
+    // "emitDeclarationOnly": true
+    "allowImportingTsExtensions": true,
+    "allowArbitraryExtensions": true,
+    // "verbatimModuleSyntax": true // or `isolatedModules`
+    "noStrictGenericChecks": false,
+    "declaration": true
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["./node_modules/**/*"]
+}

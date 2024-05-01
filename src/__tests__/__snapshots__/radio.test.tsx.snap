@@ -1,0 +1,948 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`radio component > should call onChange when an input radio is clicked 1`] = `
+<div>
+  <div
+    class="radio  "
+  >
+    <ul
+      class="radio__container"
+      style="--indicator-space: 6px;"
+    >
+      <li
+        class="radio__indicator"
+      />
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab1"
+          name="radio-id"
+          type="radio"
+          value="tab1"
+        />
+        <label
+          for="tab1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          checked=""
+          id="tab2"
+          name="radio-id"
+          type="radio"
+          value="tab2"
+        />
+        <label
+          for="tab2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab3"
+          name="radio-id"
+          type="radio"
+          value="tab3"
+        />
+        <label
+          for="tab3"
+        >
+          <span
+            class="radio__icon"
+            data-testid="radio-icon-tab3"
+          >
+            <svg
+              fill="none"
+              height="16px"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="3"
+                x2="21"
+                y1="12"
+                y2="12"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="6"
+                y2="6"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="18"
+                y2="18"
+              />
+            </svg>
+          </span>
+          <span>
+            Tab 3
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`radio component > should not call onChange when an input radio is clicked but disabled 1`] = `
+<div>
+  <div
+    class="radio  radio--disabled"
+  >
+    <ul
+      class="radio__container"
+      style="--indicator-space: 6px;"
+    >
+      <li
+        class="radio__indicator"
+      />
+      <li
+        class="radio__field"
+      >
+        <input
+          disabled=""
+          id="tab1"
+          name="radio-id"
+          type="radio"
+          value="tab1"
+        />
+        <label
+          for="tab1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          checked=""
+          disabled=""
+          id="tab2"
+          name="radio-id"
+          type="radio"
+          value="tab2"
+        />
+        <label
+          for="tab2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          disabled=""
+          id="tab3"
+          name="radio-id"
+          type="radio"
+          value="tab3"
+        />
+        <label
+          for="tab3"
+        >
+          <span
+            class="radio__icon"
+            data-testid="radio-icon-tab3"
+          >
+            <svg
+              fill="none"
+              height="16px"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="3"
+                x2="21"
+                y1="12"
+                y2="12"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="6"
+                y2="6"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="18"
+                y2="18"
+              />
+            </svg>
+          </span>
+          <span>
+            Tab 3
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`radio component > should render a tab-radio with basics props when only suggestions props are passed, for checked element 1`] = `
+<div>
+  <div
+    class="radio  "
+  >
+    <ul
+      class="radio__container"
+      style="--indicator-space: 6px;"
+    >
+      <li
+        class="radio__indicator"
+      />
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab1"
+          name="radio-id"
+          type="radio"
+          value="tab1"
+        />
+        <label
+          for="tab1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          checked=""
+          id="tab2"
+          name="radio-id"
+          type="radio"
+          value="tab2"
+        />
+        <label
+          for="tab2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab3"
+          name="radio-id"
+          type="radio"
+          value="tab3"
+        />
+        <label
+          for="tab3"
+        >
+          <span
+            class="radio__icon"
+            data-testid="radio-icon-tab3"
+          >
+            <svg
+              fill="none"
+              height="16px"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="3"
+                x2="21"
+                y1="12"
+                y2="12"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="6"
+                y2="6"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="18"
+                y2="18"
+              />
+            </svg>
+          </span>
+          <span>
+            Tab 3
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`radio component > should render a tab-radio with basics props when only suggestions props are passed, for unchecked element 1`] = `
+<div>
+  <div
+    class="radio  "
+  >
+    <ul
+      class="radio__container"
+      style="--indicator-space: 6px;"
+    >
+      <li
+        class="radio__indicator"
+      />
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab1"
+          name="radio-id"
+          type="radio"
+          value="tab1"
+        />
+        <label
+          for="tab1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          checked=""
+          id="tab2"
+          name="radio-id"
+          type="radio"
+          value="tab2"
+        />
+        <label
+          for="tab2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab3"
+          name="radio-id"
+          type="radio"
+          value="tab3"
+        />
+        <label
+          for="tab3"
+        >
+          <span
+            class="radio__icon"
+            data-testid="radio-icon-tab3"
+          >
+            <svg
+              fill="none"
+              height="16px"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="3"
+                x2="21"
+                y1="12"
+                y2="12"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="6"
+                y2="6"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="18"
+                y2="18"
+              />
+            </svg>
+          </span>
+          <span>
+            Tab 3
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`radio component > should render a tab-radio with custom id when id props is passed 1`] = `
+<div>
+  <div
+    class="radio  "
+  >
+    <ul
+      class="radio__container"
+      style="--indicator-space: 6px;"
+    >
+      <li
+        class="radio__indicator"
+      />
+      <li
+        class="radio__field"
+      >
+        <input
+          checked=""
+          id="tab1"
+          name="custom-radio-tab"
+          type="radio"
+          value="tab1"
+        />
+        <label
+          for="tab1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab2"
+          name="custom-radio-tab"
+          type="radio"
+          value="tab2"
+        />
+        <label
+          for="tab2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab3"
+          name="custom-radio-tab"
+          type="radio"
+          value="tab3"
+        />
+        <label
+          for="tab3"
+        >
+          <span
+            class="radio__icon"
+            data-testid="radio-icon-tab3"
+          >
+            <svg
+              fill="none"
+              height="16px"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="3"
+                x2="21"
+                y1="12"
+                y2="12"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="6"
+                y2="6"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="18"
+                y2="18"
+              />
+            </svg>
+          </span>
+          <span>
+            Tab 3
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`radio component > should render a tab-radio with disabled inputs when disabled props is passed 1`] = `
+<div>
+  <div
+    class="radio  radio--disabled"
+  >
+    <ul
+      class="radio__container"
+      style="--indicator-space: 6px;"
+    >
+      <li
+        class="radio__indicator"
+      />
+      <li
+        class="radio__field"
+      >
+        <input
+          checked=""
+          disabled=""
+          id="tab1"
+          name="radio-id"
+          type="radio"
+          value="tab1"
+        />
+        <label
+          for="tab1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          disabled=""
+          id="tab2"
+          name="radio-id"
+          type="radio"
+          value="tab2"
+        />
+        <label
+          for="tab2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          disabled=""
+          id="tab3"
+          name="radio-id"
+          type="radio"
+          value="tab3"
+        />
+        <label
+          for="tab3"
+        >
+          <span
+            class="radio__icon"
+            data-testid="radio-icon-tab3"
+          >
+            <svg
+              fill="none"
+              height="16px"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="3"
+                x2="21"
+                y1="12"
+                y2="12"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="6"
+                y2="6"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="18"
+                y2="18"
+              />
+            </svg>
+          </span>
+          <span>
+            Tab 3
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`radio component > should render a tab-radio with icon for elements with Icon props 1`] = `
+<div>
+  <div
+    class="radio  "
+  >
+    <ul
+      class="radio__container"
+      style="--indicator-space: 6px;"
+    >
+      <li
+        class="radio__indicator"
+      />
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab1"
+          name="radio-id"
+          type="radio"
+          value="tab1"
+        />
+        <label
+          for="tab1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          checked=""
+          id="tab2"
+          name="radio-id"
+          type="radio"
+          value="tab2"
+        />
+        <label
+          for="tab2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab3"
+          name="radio-id"
+          type="radio"
+          value="tab3"
+        />
+        <label
+          for="tab3"
+        >
+          <span
+            class="radio__icon"
+            data-testid="radio-icon-tab3"
+          >
+            <svg
+              fill="none"
+              height="16px"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="3"
+                x2="21"
+                y1="12"
+                y2="12"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="6"
+                y2="6"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="18"
+                y2="18"
+              />
+            </svg>
+          </span>
+          <span>
+            Tab 3
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`radio component > should render a tab-radio with label when label props is passed 1`] = `
+<div>
+  <div
+    class="radio radio--with-label "
+  >
+    <ul
+      class="radio__container"
+      style="--indicator-space: 6px;"
+    >
+      <li
+        class="radio__indicator"
+      />
+      <li
+        class="radio__field"
+      >
+        <input
+          checked=""
+          id="tab1"
+          name="radio-id"
+          type="radio"
+          value="tab1"
+        />
+        <label
+          for="tab1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab2"
+          name="radio-id"
+          type="radio"
+          value="tab2"
+        />
+        <label
+          for="tab2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab3"
+          name="radio-id"
+          type="radio"
+          value="tab3"
+        />
+        <label
+          for="tab3"
+        >
+          <span
+            class="radio__icon"
+            data-testid="radio-icon-tab3"
+          >
+            <svg
+              fill="none"
+              height="16px"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="3"
+                x2="21"
+                y1="12"
+                y2="12"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="6"
+                y2="6"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="18"
+                y2="18"
+              />
+            </svg>
+          </span>
+          <span>
+            Tab 3
+          </span>
+        </label>
+      </li>
+    </ul>
+    <span
+      class="radio__label"
+    >
+      Custom radio tab
+    </span>
+  </div>
+</div>
+`;
+
+exports[`radio component > should render a tab-radio with list of 3 elements 1`] = `
+<div>
+  <div
+    class="radio  "
+  >
+    <ul
+      class="radio__container"
+      style="--indicator-space: 6px;"
+    >
+      <li
+        class="radio__indicator"
+      />
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab1"
+          name="radio-id"
+          type="radio"
+          value="tab1"
+        />
+        <label
+          for="tab1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          checked=""
+          id="tab2"
+          name="radio-id"
+          type="radio"
+          value="tab2"
+        />
+        <label
+          for="tab2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </label>
+      </li>
+      <li
+        class="radio__field"
+      >
+        <input
+          id="tab3"
+          name="radio-id"
+          type="radio"
+          value="tab3"
+        />
+        <label
+          for="tab3"
+        >
+          <span
+            class="radio__icon"
+            data-testid="radio-icon-tab3"
+          >
+            <svg
+              fill="none"
+              height="16px"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="16px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="3"
+                x2="21"
+                y1="12"
+                y2="12"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="6"
+                y2="6"
+              />
+              <line
+                x1="3"
+                x2="21"
+                y1="18"
+                y2="18"
+              />
+            </svg>
+          </span>
+          <span>
+            Tab 3
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

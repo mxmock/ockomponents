@@ -1,0 +1,12 @@
+version: "3"
+services:
+  ockomponents:
+    command: npm run dev
+    restart: unless-stopped
+    container_name: ockomponents_c
+    image: ockomponents_i
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src/:/home/node/app/src

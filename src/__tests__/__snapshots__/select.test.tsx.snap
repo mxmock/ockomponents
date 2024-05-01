@@ -1,0 +1,626 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`select component > should call onChange function with the new value when input value changes, in multiple mode 1`] = `
+<div>
+  <div
+    class="field  "
+  >
+    <select
+      class="field__input"
+      id="select-id"
+      multiple=""
+      name="select-id"
+      size="10"
+    >
+      <option
+        value="select1"
+      >
+        Select 1
+      </option>
+      <optgroup
+        label="Group 1"
+      >
+        <option
+          value="grpselect1"
+        >
+          Group Select 1
+        </option>
+        <option
+          value="grpselect2"
+        >
+          Group Select 2
+        </option>
+        <option
+          value="grpselect3"
+        >
+          Group Select 3
+        </option>
+      </optgroup>
+      <option
+        value="select2"
+      >
+        Select 2
+      </option>
+      <option
+        value="select3"
+      >
+        Select 3
+      </option>
+      <optgroup
+        label="Group 2"
+      >
+        <option
+          value="grpselect4"
+        >
+          Group Select 4
+        </option>
+        <option
+          value="grpselect5"
+        >
+          Group Select 5
+        </option>
+        <option
+          value="grpselect6"
+        >
+          Group Select 6
+        </option>
+      </optgroup>
+    </select>
+    <label
+      class="field__label "
+      for="select-id"
+    >
+      Select label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`select component > should call onChange function with the new value when input value changes, in non multiple mode 1`] = `
+<div>
+  <div
+    class="field field--with-right-icon "
+  >
+    <select
+      class="field__input"
+      id="select-id"
+      name="select-id"
+    >
+      <option
+        value="select1"
+      >
+        Select 1
+      </option>
+      <optgroup
+        label="Group 1"
+      >
+        <option
+          value="grpselect1"
+        >
+          Group Select 1
+        </option>
+        <option
+          value="grpselect2"
+        >
+          Group Select 2
+        </option>
+        <option
+          value="grpselect3"
+        >
+          Group Select 3
+        </option>
+      </optgroup>
+      <option
+        value="select2"
+      >
+        Select 2
+      </option>
+      <option
+        value="select3"
+      >
+        Select 3
+      </option>
+      <optgroup
+        label="Group 2"
+      >
+        <option
+          value="grpselect4"
+        >
+          Group Select 4
+        </option>
+        <option
+          value="grpselect5"
+        >
+          Group Select 5
+        </option>
+        <option
+          value="grpselect6"
+        >
+          Group Select 6
+        </option>
+      </optgroup>
+    </select>
+    <span
+      class="field__icon field__icon--right"
+      data-testid="select-right-icon-select-id"
+    >
+      <svg
+        fill="none"
+        height="calc(100% - 16px)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="calc(100% - 16px)"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="6 9 12 15 18 9"
+        />
+      </svg>
+    </span>
+    <label
+      class="field__label "
+      for="select-id"
+    >
+      Select label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`select component > should not call onChange function with when disabled 1`] = `
+<div>
+  <div
+    class="field field--with-right-icon "
+  >
+    <select
+      class="field__input"
+      disabled=""
+      id="select-id"
+      name="select-id"
+    >
+      <option
+        value="select1"
+      >
+        Select 1
+      </option>
+      <optgroup
+        label="Group 1"
+      >
+        <option
+          value="grpselect1"
+        >
+          Group Select 1
+        </option>
+        <option
+          value="grpselect2"
+        >
+          Group Select 2
+        </option>
+        <option
+          value="grpselect3"
+        >
+          Group Select 3
+        </option>
+      </optgroup>
+      <option
+        value="select2"
+      >
+        Select 2
+      </option>
+      <option
+        value="select3"
+      >
+        Select 3
+      </option>
+      <optgroup
+        label="Group 2"
+      >
+        <option
+          value="grpselect4"
+        >
+          Group Select 4
+        </option>
+        <option
+          value="grpselect5"
+        >
+          Group Select 5
+        </option>
+        <option
+          value="grpselect6"
+        >
+          Group Select 6
+        </option>
+      </optgroup>
+    </select>
+    <span
+      class="field__icon field__icon--right"
+      data-testid="select-right-icon-select-id"
+    >
+      <svg
+        fill="none"
+        height="calc(100% - 16px)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="calc(100% - 16px)"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="6 9 12 15 18 9"
+        />
+      </svg>
+    </span>
+    <label
+      class="field__label "
+      for="select-id"
+    >
+      Select label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`select component > should not call onChange function with when onChange is undefined 1`] = `
+<div>
+  <div
+    class="field field--with-right-icon "
+  >
+    <select
+      class="field__input"
+      id="select-id"
+      name="select-id"
+    >
+      <option
+        value="select1"
+      >
+        Select 1
+      </option>
+      <optgroup
+        label="Group 1"
+      >
+        <option
+          value="grpselect1"
+        >
+          Group Select 1
+        </option>
+        <option
+          value="grpselect2"
+        >
+          Group Select 2
+        </option>
+        <option
+          value="grpselect3"
+        >
+          Group Select 3
+        </option>
+      </optgroup>
+      <option
+        value="select2"
+      >
+        Select 2
+      </option>
+      <option
+        value="select3"
+      >
+        Select 3
+      </option>
+      <optgroup
+        label="Group 2"
+      >
+        <option
+          value="grpselect4"
+        >
+          Group Select 4
+        </option>
+        <option
+          value="grpselect5"
+        >
+          Group Select 5
+        </option>
+        <option
+          value="grpselect6"
+        >
+          Group Select 6
+        </option>
+      </optgroup>
+    </select>
+    <span
+      class="field__icon field__icon--right"
+      data-testid="select-right-icon-select-id"
+    >
+      <svg
+        fill="none"
+        height="calc(100% - 16px)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="calc(100% - 16px)"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="6 9 12 15 18 9"
+        />
+      </svg>
+    </span>
+    <label
+      class="field__label "
+      for="select-id"
+    >
+      Select label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`select component > should render a select with custom id & label when 'id' and 'label' props are passed 1`] = `
+<div>
+  <div
+    class="field field--with-right-icon "
+  >
+    <select
+      class="field__input"
+      id="select-test-id"
+      name="select-test-id"
+    >
+      <option
+        value="select1"
+      >
+        Select 1
+      </option>
+      <optgroup
+        label="Group 1"
+      >
+        <option
+          value="grpselect1"
+        >
+          Group Select 1
+        </option>
+        <option
+          value="grpselect2"
+        >
+          Group Select 2
+        </option>
+        <option
+          value="grpselect3"
+        >
+          Group Select 3
+        </option>
+      </optgroup>
+      <option
+        value="select2"
+      >
+        Select 2
+      </option>
+      <option
+        value="select3"
+      >
+        Select 3
+      </option>
+      <optgroup
+        label="Group 2"
+      >
+        <option
+          value="grpselect4"
+        >
+          Group Select 4
+        </option>
+        <option
+          value="grpselect5"
+        >
+          Group Select 5
+        </option>
+        <option
+          value="grpselect6"
+        >
+          Group Select 6
+        </option>
+      </optgroup>
+    </select>
+    <span
+      class="field__icon field__icon--right"
+      data-testid="select-right-icon-select-test-id"
+    >
+      <svg
+        fill="none"
+        height="calc(100% - 16px)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="calc(100% - 16px)"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="6 9 12 15 18 9"
+        />
+      </svg>
+    </span>
+    <label
+      class="field__label "
+      for="select-test-id"
+    >
+      My Select
+    </label>
+  </div>
+</div>
+`;
+
+exports[`select component > should render a select with list of elements 1`] = `
+<div>
+  <div
+    class="field field--with-right-icon "
+  >
+    <select
+      class="field__input"
+      id="select-id"
+      name="select-id"
+    >
+      <option
+        value="select1"
+      >
+        Select 1
+      </option>
+      <optgroup
+        label="Group 1"
+      >
+        <option
+          value="grpselect1"
+        >
+          Group Select 1
+        </option>
+        <option
+          value="grpselect2"
+        >
+          Group Select 2
+        </option>
+        <option
+          value="grpselect3"
+        >
+          Group Select 3
+        </option>
+      </optgroup>
+      <option
+        value="select2"
+      >
+        Select 2
+      </option>
+      <option
+        value="select3"
+      >
+        Select 3
+      </option>
+      <optgroup
+        label="Group 2"
+      >
+        <option
+          value="grpselect4"
+        >
+          Group Select 4
+        </option>
+        <option
+          value="grpselect5"
+        >
+          Group Select 5
+        </option>
+        <option
+          value="grpselect6"
+        >
+          Group Select 6
+        </option>
+      </optgroup>
+    </select>
+    <span
+      class="field__icon field__icon--right"
+      data-testid="select-right-icon-select-id"
+    >
+      <svg
+        fill="none"
+        height="calc(100% - 16px)"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="calc(100% - 16px)"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="6 9 12 15 18 9"
+        />
+      </svg>
+    </span>
+    <label
+      class="field__label "
+      for="select-id"
+    >
+      Select label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`select component > should render a select with multiple, required and disabled attributes when this props are passed 1`] = `
+<div>
+  <div
+    class="field  "
+  >
+    <select
+      class="field__input"
+      disabled=""
+      id="select-id"
+      multiple=""
+      name="select-id"
+      required=""
+      size="10"
+    >
+      <option
+        value="select1"
+      >
+        Select 1
+      </option>
+      <optgroup
+        label="Group 1"
+      >
+        <option
+          value="grpselect1"
+        >
+          Group Select 1
+        </option>
+        <option
+          value="grpselect2"
+        >
+          Group Select 2
+        </option>
+        <option
+          value="grpselect3"
+        >
+          Group Select 3
+        </option>
+      </optgroup>
+      <option
+        value="select2"
+      >
+        Select 2
+      </option>
+      <option
+        value="select3"
+      >
+        Select 3
+      </option>
+      <optgroup
+        label="Group 2"
+      >
+        <option
+          value="grpselect4"
+        >
+          Group Select 4
+        </option>
+        <option
+          value="grpselect5"
+        >
+          Group Select 5
+        </option>
+        <option
+          value="grpselect6"
+        >
+          Group Select 6
+        </option>
+      </optgroup>
+    </select>
+    <label
+      class="field__label field__label--required"
+      for="select-id"
+    >
+      Select label
+    </label>
+  </div>
+</div>
+`;
